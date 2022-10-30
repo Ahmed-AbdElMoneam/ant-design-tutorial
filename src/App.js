@@ -4,6 +4,8 @@ import Divide from "./Divide";
 import Spacing from "./Spacing";
 import GridSystem from "./GridSystem";
 import LayoutSystem from "./LayoutSystem";
+import BreadCrumb from "./BreadCrumb";
+import DropDownList from "./DropDownList";
 import { Divider } from "antd";
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
       <GridSystem />
       <Divider />
       <LayoutSystem />
+      <Divider />
+      <BreadCrumb />
+      <Divider />
+      <DropDownList />
     </div>
   );
 }
