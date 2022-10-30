@@ -6,6 +6,8 @@ import GridSystem from "./GridSystem";
 import LayoutSystem from "./LayoutSystem";
 import BreadCrumb from "./BreadCrumb";
 import DropDownList from "./DropDownList";
+import PaginationBar from "./PaginationBar";
+import FormHandling from "./FormHandling";
 import { Divider } from "antd";
 
 function App() {
@@ -13,17 +15,25 @@ function App() {
     <div className="App">
       <General />
       <Divider />
-      <Divide />
+      <div className="Layout">
+        <Divide />
+        <Divider />
+        <Spacing />
+        <Divider />
+        <GridSystem />
+        <Divider />
+        <LayoutSystem />
+      </div>
       <Divider />
-      <Spacing />
+      <div className="Navigation">
+        <BreadCrumb />
+        <Divider />
+        <DropDownList />
+        <Divider />
+        <PaginationBar />
+      </div>
       <Divider />
-      <GridSystem />
-      <Divider />
-      <LayoutSystem />
-      <Divider />
-      <BreadCrumb />
-      <Divider />
-      <DropDownList />
+      <FormHandling />
     </div>
   );
 }
