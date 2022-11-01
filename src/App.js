@@ -12,6 +12,7 @@ import InputForNumbers from "./InputForNumbers";
 import RadioGroup from "./RadioGroup";
 import BlockSegmented from "./BlockSegmented";
 import TableHandling from "./TableHandling";
+import TimelineChart from "./TimelineChart";
 import { Divider } from "antd";
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
         <BlockSegmented />
         <Divider />
         <TableHandling />
+        <Divider />
+        <TimelineChart />
       </div>
     </div>
   );
